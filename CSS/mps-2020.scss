@@ -1,0 +1,871 @@
+// * Current Version
+
+/* MPS COMPONENTS */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+// PRIMARY COLORS
+$primary: #CB5A28; // From MSU BRANDED COLORS - $sec-red-orange: #CB5A28;
+$primary-darker: #b24e23; // From MSU BRANDED COLORS - $sec-red-orange-darker: #b24e23; /*for text accessibility on white backgrounds*/
+$secondary: #008183; // From MSU BRANDED COLORS - $sec-teal: #008183;
+$secondary-darker: #006365; // From MSU BRANDED COLORS - $sec-teal-darker: #006365;
+
+// MSU BRANDED COLORS
+$msu-color: #18453B;
+$sec-beige: #E8D9B5;
+$sec-burnt-orange: #C89A58;
+$sec-orange: #F08521;
+$sec-red-orange: #CB5A28;
+$sec-red-orange-darker: #b24e23; // For text accessibility on white backgrounds
+$sec-purple: #6E005F;
+$sec-blue: #909ab7;
+$sec-teal: #008183;
+$sec-teal-darker: #006365;
+$sec-medium-green: #94AE4A;
+$sec-lime-green: #D1DE3F;
+$sec-green: #0DB14B;
+$sec-plum-grey: #535054;
+$sec-medium-gray: #97A2A2;
+
+
+// Additional Colors
+$dark-grey: #444;
+$lighter-green: #548555;
+
+// Transition Speeds
+$fast-transition: 0.3s ease-in-out;
+$xfast-transition: 0.15s linear;
+
+// ADMISSIONS and CURRENT STUDENTS SECTIONS: styling bullet point margins under ordered lists
+$lg-scn-margin: 0.5in;
+$sm-scn-margin: 0.2in !important;
+
+// Flex layout
+.mps-row {
+  // Copied from Bootstrap .row class
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+// Buttons
+.mps-btn {
+  // Primary Button
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border-radius: 2px !important;
+  color: black !important;
+  background: $primary;
+  text-shadow: none;
+  transition: $xfast-transition;
+  -webkit-transition: $xfast-transition;
+  -webkit-appearance: none !important; // Override Natsci Mura 7.1 / Bootstrap 4
+  &:hover, &.focus, &:focus, &:active {
+    color: $primary-darker !important;
+    background: white;
+    border-color: $sec-plum-grey;
+  }
+}
+
+.mps-btn-hollow {
+  @extend .mps-btn;
+  color: $primary-darker !important;
+  background: white;
+  border-color: $sec-plum-grey;
+  &:hover, &.focus, &:focus {
+    color: black !important;
+    background: $primary;
+    border-color: transparent;
+  }
+  &:active {
+    background: $primary-darker;
+    border-color: transparent;
+    color: black !important;
+  }
+}
+
+.mps-btn-sec {
+  // Tertiary Button
+  @extend .mps-btn;
+  border-color: $secondary;
+  background: $secondary;
+  color: white !important;
+  &:hover, &.focus, &:focus, &:active {
+    color: $secondary !important;
+    background: rgb(255, 178, 178);
+    border-color: $sec-medium-green;
+  }
+}
+
+.mps-btn-sec-hollow {
+  // Secondary Hollow Button
+  @extend .mps-btn-hollow;
+  color: $secondary;
+  border-color: $sec-medium-green;
+  &:hover, &.focus, &:focus {
+    color: white;
+    background: $secondary;
+  }
+  &:active {
+    background: $secondary-darker;
+    color: white;
+  }
+}
+
+// General Style Overrides
+.mps-h2 {
+  // Alternate H2
+  font-weight: 400;
+  color: $msu-color;
+  letter-spacing: 1.5px;
+}
+
+.mps-h3 {
+  // Alternate H3
+  font-weight: 400;
+  color: $primary-darker;
+  letter-spacing: 1.25px;
+}
+
+.mps-color-highlight {
+  // To highlight <p> text with primary color
+  color: $primary-darker;
+}
+
+// Page Associated Thumbnails
+.overview, .contact-us, .academic-program, .financial-aid, .coursework-requirements, .student-life, .resources {
+  .secondaryPageWrapper .mainCol .associatedImage {
+    // Associated image thumbnails for *SELECTED* pages are set at Large. Removing floats allows them to become full-width, while maintaining a small size.
+    float: none;
+    margin: 10px 0 40px 0;
+  }
+}
+@media (max-width: 768px) {
+  .secondaryPageWrapper .mainCol img {
+    // For phones, reduce padding from 10px to 4px so picture breathes.
+    padding: 4px;
+  }
+}
+
+
+/* HOMEPAGE */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+#homepage {
+  .mura-body.mainColContent {
+    h2 {
+      // H2 headers
+      @extend .mps-h2 ;
+      text-align: center;
+    }
+    .btn.btn-lg.mps-btn {
+      // Apply Now Button: spaced away from first paragraph*/
+      margin-top: 12.5px;
+      margin-top: 0.8rem;
+    }
+    hr {
+      // Homepage line break style
+      width: 95%;
+      margin-top: 1.875rem;
+      margin-bottom: 1.875rem;
+    }
+    .mps-home-intro {
+      p {
+        text-align: center;
+      }
+      #apply-btn {
+        text-align: center;
+      }
+    }
+    .intro-header {
+      // Homepage Icon Area: icon header
+      color: $primary-darker;
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 1.75px;
+      line-height: 1.2;
+    }
+    .fa {
+      // Homepage Icon Area: icons
+      color: $sec-plum-grey;
+      font-size: 3.45rem;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+    }
+    .mps-icons-home {
+      hr {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
+    .mps-icon-area:first-of-type {
+      padding-top: 10px; // for IE8
+      padding-top: 1rem;
+    }
+    .mps-icon-area {
+      // Homepage Icon Area:
+      padding-top: 1.875rem;
+      padding-bottom: 1.25rem;
+      .mps-icon {
+        // Icon image layout
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      .mps-icon-text {
+        // Icon summary text layout
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        letter-spacing: 0.25px;
+      }
+      ul {
+        // Homepage Icon Area: smaller list font and bottom margin to separate from button
+        margin-bottom: 20px; // For IE8
+        margin-bottom: 1.25rem;
+      }
+      p, h3 {
+        text-align: center;
+      }
+    }
+  }
+  .mps-homepage-news {
+    // Homepage Aside (second column)
+    div.mura-index {
+      div.item {
+        padding-left: 0 !important;
+        .image {
+          // Homepage Aside (second column): centered image with bottom padding
+          position: relative;
+          margin: 0 auto;
+          padding-bottom: 10px;
+          padding-bottom: 0.625rem;
+          text-align: center;
+        }
+        .summary {
+          // Homepage Aside (second column): smaller summary font
+          font-size: 0.92rem;
+        }
+      }
+    }
+  }
+  .mps-pre-footer {
+    /// Pre-footer that has the links to "College of Natural Sciences" and "College of Agriculture and Natural Resources" - padding to align with footer menu
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  // Tablet and Mobile
+  #homepage {
+    .mura-body.mainColContent {
+      .mps-home-intro {
+        p {
+          text-align: left;
+        }
+      }
+    }
+    .mps-pre-footer {
+      // Pre-footer that has the links to "College of Natural Sciences" and "College of Agriculture and Natural Resources" - centered text
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #homepage {
+    .mura-body.mainColContent {
+      .mps-icon-area {
+        .mps-icon, .mps-icon-text {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* CONTACT US */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+.contact-us {
+  .mainColContent {
+    margin-top: 40px;
+  }
+}
+
+
+/* CONTACT US and PROGRAM CONTACTS: Orange fonticon */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+.contact-us .mainColContent, .program-contacts .mura-index,  .faculty .mura-index, .students .mura-index, .executive-committee .mura-index {
+  .fa {
+    color: $primary-darker;
+  }
+  .fa-phone {
+    font-size: 1.15rem;
+  }
+  .fa-envelope {
+    font-size: 0.95rem;
+  }
+  .fa-map-marker {
+    font-size: 1.1rem;
+  }
+  .fa-home {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* HOW TO APPLY and COURSEWORK & REQUIREMENTS PAGES: styling bullet point margins under ordered lists */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 768px) {
+  .mps-bullet-point {
+    ul {
+      li {
+        /// 0.5 inch indent for bullet points on medium to large devices
+        margin-left: $lg-scn-margin;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .mps-bullet-point {
+    ul {
+      li {
+        // 0.2 inch indent for bullet points on medium to large devices
+        margin-left: $sm-scn-margin;
+      }
+    }
+  }
+}
+
+
+/* HOW TO APPLY: Tabs styling */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 768px) {
+  .mps-tabs-border {
+    // Adding border to the tab area, only tablet and desktop
+    display: inline-block;
+  }
+  .tab-content {
+    border-bottom: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+  }
+}
+
+ul.nav-tabs > li.nav-item > a.nav-link.active {
+  // Changing the color of the active tabs
+  background: #eee;
+}
+
+.how-to-apply {
+  #MainContent {
+    h2 {
+      /* stylelint-disable */
+      @extend .mps-h2 ;
+      /* stylelint-enable */
+    }
+    h3 {
+      /* stylelint-disable */
+      @extend .mps-h3 ;
+      /* stylelint-enable */
+    }
+  }
+}
+
+
+/* MPS APPLICATION FORM */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+.mps-application-form #MainContent {
+  .mura-section {
+    // From section legend color and spacing//
+    padding-top: 30px;
+    padding-top: 1.875rem;
+    color: $primary-darker;
+    font-size: 1.75rem;
+  }
+  .mura-control-group > label {
+    // Input label styling
+    font-weight: 400;
+  }
+  button.form-submit {
+    // MPS Application Button style
+    /* stylelint-disable */
+    @extend .mps-btn ;
+    /* stylelint-enable */
+    margin-bottom: 2rem;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mps-application-form #MainContent {
+    .mura-control-group {
+      // Input area width for larger desktops
+      width: 75%;
+    }
+  }
+}
+
+
+/* FACULTY PAGE and PROGRAM CONTACTS: Layout */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+.faculty, .program-contacts, .students, .executive-committee {
+  .mura-index {
+    div {
+      div.item {
+        // MARGIN BOTTOM to be used only when images medium-sized (180 x 180)
+        .image {
+          img {
+            padding: 0px;
+          }
+        }
+        .title {
+          font-size: 1.25rem;
+        }
+        .summary {
+          a {
+            // Make links within summary (email, address) less bold
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+// Large screens
+@media (min-width: 992px) {
+  .faculty, .program-contacts, .students, .executive-committee {
+    .mura-index {
+      div {
+        div.item {
+          .summary {
+            div.row {
+              div:nth-child(1) {
+                padding-right: 0; // Removes padding-right from contact information area div
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Mobile devices
+@media only screen and (max-width: 767px) {
+  .faculty, .program-contacts, .students, .executive-committee {
+    .mura-index {
+      div {
+        div.item {
+          padding-left: 0px !important;
+          border-bottom: 1px solid #eaeaea;
+          .image {
+            margin: 0 0 0.625rem 0;
+            position: relative;
+            text-align: center;
+          }
+          .title {
+            // Title center aligned in small screens
+            margin-bottom: 0.8rem;
+            text-align: center;
+          }
+          .summary {
+            div {
+              div:nth-child(1) {
+                // ONLY Faculty and Students: info/address center-aligned in small screens
+                text-align: center;
+                margin-bottom: 0.625rem;
+              }
+              div:nth-child(2) {
+                // Gives the research summary more space
+                padding: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .program-contacts {
+    .mura-index {
+      div {
+        div.item {
+          .summary {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+// Tablets to large screens
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .faculty, .program-contacts, .students, .executive-committee {
+    .mura-index {
+      div {
+        div.item {
+          .summary {
+            div {
+              div:nth-child(1) {
+                // ONLY Faculty and Students: Creating gap between contact info and summary
+                margin-bottom: 0.625rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* STUDENT LIFE PAGE */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+// Styling the Unofficial Grad Guide Aside
+.grad-guide {
+  display: inline-block;
+  .sec-heading-red-orange {
+    background: $primary-darker;
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    padding: 6px;
+  }
+  .well {
+    background: transparent;
+  }
+  .grad-guide-img {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.student-life {
+  figure {
+    // Override CNS Figure stylings for this page
+    max-width: 100%;
+    background: none;
+    border: 0px;
+  }
+}
+
+/* NEWS PAGE: Content Layout */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+.news {
+  .mura-index {
+    div {
+      div.item {
+        padding-top: 12px !important; // Important declaration to override the .last styling
+        padding-right: 12px;
+      }
+    }
+  }
+}
+// Mobile devices
+@media only screen and (max-width: 767px) {
+  .news {
+    .mura-index {
+      div {
+        div.item {
+          padding: 0 0 6px 0 !important;
+          border-bottom: 1px solid #f5f5f5;
+          .image {
+            position: relative;
+            text-align: center;
+          }
+          .date.releaseDate {
+            margin-top: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Fascination of Plants Day @ MSU: Temporary Page */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+.fascination-of-plants-day-msu {
+  // NAV
+  ol#crumblist {
+    // Take away breadcrumb list
+    display: none;
+  }
+  h1.mura-page-title.pageTitle {
+    // Remove default page title
+    display: none;
+  }
+  #MainContent {
+    // Make main column span entire page
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    h1, h2 {
+      // Style headers throughout page
+      font-weight: 400;
+      color: #18453B;
+      letter-spacing: 1.5px;
+    }
+    label {
+      // Do not display any labels
+      display: none;
+    }
+    .a2a_kit.a2a_kit_size_32.a2a_default_style.social-share {
+      // Do not display social shares
+      display: none;
+    }
+  }
+  .mps-fopd-hero-text {
+    // Hero Area
+    background: url(/sites/_pmsb/assets/Image/Fascination_of_Plants_Day/2019/_HJS4370-bg-solid-web-sm.jpg) center;
+    padding: 273px 0 154px 0;
+    text-align: center;
+    h1, h2 {
+      color: #fff !important;
+      text-shadow: 3px 3px black;
+    }
+    h1 {
+      font-size: 2.8rem;
+    }
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+  .mps-fopd-content {
+    // Content area
+    div.row {
+      // Adding padding to each row class
+      padding-top: 40px;
+    }
+    img {
+      // Removing padding from images
+      padding: 0px;
+    }
+    h2 {
+      // Styling h2
+      font-size: 30px;
+      font-weight: 600 !important;
+      margin-top: 0;
+      a {
+        text-decoration: none;
+      }
+    }
+    h3 {
+      // Styling h3
+      font-weight: 300;
+      color: #18453B;
+      margin-top: 0;
+      a {
+        text-decoration: none;
+      }
+    }
+    p.lead {
+      // Styling Lead paragraph under hero image
+      margin: 0 auto;
+      font-weight: 200;
+      font-size: 18px;
+    }
+    .mps-btn-hollow {
+      // Adding space to buttons
+      margin-bottom: 30px;
+    }
+    .mps-fopd-top-btns {
+      // Aligning two top buttons in the section under the Hero image
+      div {
+        // Removing padding from top buttons so they align with gutter
+        padding-right: 0;
+      }
+    }
+    .mps-fopd-card {
+      // Activities cards
+      margin-bottom: 50px;
+      img {
+        margin-bottom: 16px;
+        width: 94%;
+        display: inherit;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h3 {
+        font-size: 21px;
+        text-align: center;
+      }
+      ul {
+        margin-bottom: 20px;
+        padding-left: 30px;
+      }
+      li {
+        padding-right: 10px;
+        font-weight: 300;
+      }
+    }
+    div.mps-fopd-events-btn {
+      // "See all activities" button at the bottom of the Events section
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    div.fopd-partner-logos {
+      // Aligning and spacing out logos under "Our Partners" section
+      margin-bottom: 40px;
+      text-align: center;
+      .col-md-6:first-of-type {
+        // Adding padding to the bottom of first logo for proper spacing on mobile display
+        padding-bottom: 50px;
+      }
+    }
+    div.fopd-sponsors {
+      // Sponsors section
+      h2 {
+        // Adding some padding between h2 and logos
+        padding-bottom: 20px;
+      }
+    }
+    div.fopd-sponsors:not(h2) > div {
+      // Adding padding to sponsors section
+      padding-left: 30px;
+      padding-right: 40px;
+      margin-right: 0px;
+    }
+    div.fopd-logos {
+      // Logo display sections
+      display: inline-block;
+      width: 100%;
+      div {
+        // Centering logos and creating space between them
+        text-align: center;
+        height: 100px;
+      }
+    }
+  }
+}
+
+.fascination-of-plants-day-for-press {
+  // Press Area page
+  // NAV
+  ol#crumblist {
+    // Take away breadcrumb list
+    display: none;
+  }
+  h1 {
+    color: $msu-color;
+    margin-top: 35px;
+  }
+  h2 {
+    font-size: 27px;
+    font-weight: 600;
+    color: $msu-color;
+  }
+  div.fopd-press-area .mura-item-content {
+    // Images Thumbnails margin-bottom
+    img {
+      padding: 3px;
+    }
+  }
+  div.fopd-press-area .mura-object:last-child {
+    // Thumbnail area margin-bottom;
+    margin-bottom: 12px;
+  }
+  div.fopd-press-area .mura-item-meta__summary {
+    // Summary aligned middle
+    text-align: center;
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  // Tablets
+  .fascination-of-plants-day-msu {
+    .mps-fopd-hero-text {
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    .mps-fopd-content {
+      div.row {
+        padding-top: 27px;
+      }
+      .mps-btn-hollow {
+        // Adding bottom margin to the two buttons in the first text section
+        margin-bottom: 20px;
+      }
+      .mps-fopd-card {
+        img {
+          margin-bottom: 16px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .fascination-of-plants-day-msu {
+    .mps-fopd-hero-text {
+      // Hero image for mobile
+      padding: 75px 15px;
+      margin: 0 -15px;
+      background-size: cover;
+      h1 {
+        font-size: 2.3rem;
+      }
+      h2 {
+        font-size: 1.9rem;
+      }
+    }
+    .mps-fopd-content {
+      div.row {
+        padding-top: 27px;
+      }
+      .mps-fopd-top-btns {
+        text-align: center;
+        div {
+          // Removing padding from top buttons so they align with gutter
+          padding-right: 15px;
+        }
+      }
+      .mps-btn-hollow {
+        // Adding bottom margin to the two buttons in the first text section
+        margin-bottom: 16px;
+        float: none !important;
+      }
+      .mps-fopd-card {
+        margin-bottom: 40px;
+        img {
+          margin-bottom: 16px;
+          width: 100%;
+        }
+      }
+      div.fopd-logos {
+        div {
+          // Shorter logo height
+          height: 90px;
+        }
+      }
+    }
+  }
+  .fascination-of-plants-day-for-press {
+    div.fopd-press-area {
+      .mura-item-content {
+        // Images Thumbnails margin-bottom
+        img {
+          padding: 3px 0;
+        }
+      }
+      .mura-item-meta__summary {
+        text-align: left;
+      }
+    }
+  }
+}
+
+/* HOMEPAGE OVERRIDES */
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+.collegeName {
+  display: none;
+}

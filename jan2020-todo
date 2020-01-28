@@ -1,0 +1,19 @@
+MPS REDESIGN 2020
+
+  HOW TO APPLY PAGE: 
+  - turn from tabbed nav to separate pages
+  - Lots of Bootstrap CSS that has to go
+
+COURSEWORK & REQUIREMENTS AND RESOURCES PAGES:
+  Redo accordion or create new pages?
+  DONE:
+    - Ask Jesse if there will be accordion
+
+REMOVE BOOTSTRAP CSS FROM:
+  - Faculty page
+  - Exec Committee page
+  - Contact Us: simplify, no rows
+  - FoPD page needs to be redesigned (remember we have the no sideCol option with new Mura)
+  DONE:
+    - Homepage
+    - Remove Bootstrap CSS layout classes from all pages

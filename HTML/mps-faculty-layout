@@ -1,0 +1,14 @@
+<!-- MPS Faculty HTML Layout -->
+<!-- Note: Take away acronyms as much as possible -->
+<!-- Below is just an example -->
+
+<div class="row">
+	<div class="col"><span aria-hidden="true" class="fa fa-home">&nbsp;</span>Department/Program 1; Department/Program 2 (if applicable)<span class="sr-only">home icon</span><br />
+		<span aria-hidden="true" class="fa fa-phone">&nbsp;</span>(517) OFFICE NUMBER ONLY<span class="sr-only">phone icon</span><br />
+		<span aria-hidden="true" class="fa fa-envelope">&nbsp;</span> <a href="mailto:email@msu.edu">email@msu.edu</a><span class="sr-only">envelope icon</span><br />
+    <span aria-hidden="true" class="fa fa-map-marker">&nbsp; </span><a href="https://maps.msu.edu/interactive/index.php?location=67T2">110 Building name and link to MSU interactive map</a><span class="sr-only">map marker icon</span>
+  </div>
+	<div class="col-xl-7 col-lg-6 offset-md-0 col-md-12 col-10 offset-1">
+		<p>The research summary goes here. When displayed on desktop, that will be the second column, to the right</p>
+	</div>
+</div>
