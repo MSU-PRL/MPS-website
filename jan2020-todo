@@ -14,8 +14,8 @@ COURSEWORK & REQUIREMENTS AND RESOURCES PAGES:
 REMOVE BOOTSTRAP CSS FROM:
   - Faculty page
   - Exec Committee page
-  - Contact Us: simplify, no rows
   - FoPD page needs to be redesigned (remember we have the no sideCol option with new Mura)
   DONE:
     - Homepage
     - Remove Bootstrap CSS layout classes from all pages
+    - Contact Us: simplify, no rows
