@@ -167,19 +167,19 @@
   margin-top: 40px; }
 
 /* CONTACT US and PROGRAM CONTACTS: Orange fonticon */
-.contact-us .mainColContent .fa, .program-contacts .mura-index .fa, .faculty .mura-index .fa, .students .mura-index .fa, .executive-committee .mura-index .fa {
+.contact-us .sideCol .fa, .program-contacts .mura-index .fa, .faculty .mura-index .fa, .students .mura-index .fa, .executive-committee .mura-index .fa {
   color: #b24e23; }
 
-.contact-us .mainColContent .fa-phone, .program-contacts .mura-index .fa-phone, .faculty .mura-index .fa-phone, .students .mura-index .fa-phone, .executive-committee .mura-index .fa-phone {
+.contact-us .sideCol .fa-phone, .program-contacts .mura-index .fa-phone, .faculty .mura-index .fa-phone, .students .mura-index .fa-phone, .executive-committee .mura-index .fa-phone {
   font-size: 1.15rem; }
 
-.contact-us .mainColContent .fa-envelope, .program-contacts .mura-index .fa-envelope, .faculty .mura-index .fa-envelope, .students .mura-index .fa-envelope, .executive-committee .mura-index .fa-envelope {
+.contact-us .sideCol .fa-envelope, .program-contacts .mura-index .fa-envelope, .faculty .mura-index .fa-envelope, .students .mura-index .fa-envelope, .executive-committee .mura-index .fa-envelope {
   font-size: 0.95rem; }
 
-.contact-us .mainColContent .fa-map-marker, .program-contacts .mura-index .fa-map-marker, .faculty .mura-index .fa-map-marker, .students .mura-index .fa-map-marker, .executive-committee .mura-index .fa-map-marker {
+.contact-us .sideCol .fa-map-marker, .program-contacts .mura-index .fa-map-marker, .faculty .mura-index .fa-map-marker, .students .mura-index .fa-map-marker, .executive-committee .mura-index .fa-map-marker {
   font-size: 1.1rem; }
 
-.contact-us .mainColContent .fa-home, .program-contacts .mura-index .fa-home, .faculty .mura-index .fa-home, .students .mura-index .fa-home, .executive-committee .mura-index .fa-home {
+.contact-us .sideCol .fa-home, .program-contacts .mura-index .fa-home, .faculty .mura-index .fa-home, .students .mura-index .fa-home, .executive-committee .mura-index .fa-home {
   font-size: 1.1rem; }
 
 /* HOW TO APPLY and COURSEWORK & REQUIREMENTS PAGES: styling bullet point margins under ordered lists */
