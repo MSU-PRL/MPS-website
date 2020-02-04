@@ -12,7 +12,7 @@ COURSEWORK & REQUIREMENTS AND RESOURCES PAGES:
     - Ask Jesse if there will be accordion
 
 REMOVE BOOTSTRAP CSS FROM:
-  - Faculty page: recreate bootstrap
+  - Faculty, Students, Program Contacts, Exec Committee pages: recreate bootstrap. DONE need to change markup
   - Exec Committee page
   - FoPD page needs to be redesigned (remember we have the no sideCol option with new Mura)
   DONE:

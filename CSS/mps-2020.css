@@ -241,9 +241,27 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
 .faculty .mura-index div div.item .summary a, .program-contacts .mura-index div div.item .summary a, .students .mura-index div div.item .summary a, .executive-committee .mura-index div div.item .summary a {
   font-weight: 400; }
 
-@media (min-width: 992px) {
-  .faculty .mura-index div div.item .summary div.row div:nth-child(1), .program-contacts .mura-index div div.item .summary div.row div:nth-child(1), .students .mura-index div div.item .summary div.row div:nth-child(1), .executive-committee .mura-index div div.item .summary div.row div:nth-child(1) {
-    padding-right: 0; } }
+.faculty .mura-index div div.item .summary div.mps-row div:nth-child(1), .program-contacts .mura-index div div.item .summary div.mps-row div:nth-child(1), .students .mura-index div div.item .summary div.mps-row div:nth-child(1), .executive-committee .mura-index div div.item .summary div.mps-row div:nth-child(1) {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 100%; }
+
+@media (min-width: 1200px) {
+  .faculty .mura-index div div.item .summary div.row div:nth-child(2), .faculty .mura-index div div.item .summary div.mps-row div:nth-child(2), .program-contacts .mura-index div div.item .summary div.row div:nth-child(2), .program-contacts .mura-index div div.item .summary div.mps-row div:nth-child(2), .students .mura-index div div.item .summary div.row div:nth-child(2), .students .mura-index div div.item .summary div.mps-row div:nth-child(2), .executive-committee .mura-index div div.item .summary div.row div:nth-child(2), .executive-committee .mura-index div div.item .summary div.mps-row div:nth-child(2) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
+            flex: 0 0 58.333333%;
+    max-width: 58.333333%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .faculty .mura-index div div.item .summary div.row div:nth-child(2), .faculty .mura-index div div.item .summary div.mps-row div:nth-child(2), .program-contacts .mura-index div div.item .summary div.row div:nth-child(2), .program-contacts .mura-index div div.item .summary div.mps-row div:nth-child(2), .students .mura-index div div.item .summary div.row div:nth-child(2), .students .mura-index div div.item .summary div.mps-row div:nth-child(2), .executive-committee .mura-index div div.item .summary div.row div:nth-child(2), .executive-committee .mura-index div div.item .summary div.mps-row div:nth-child(2) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; } }
 
 @media only screen and (max-width: 767px) {
   .faculty .mura-index div div.item, .program-contacts .mura-index div div.item, .students .mura-index div div.item, .executive-committee .mura-index div div.item {
@@ -256,17 +274,25 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
     .faculty .mura-index div div.item .title, .program-contacts .mura-index div div.item .title, .students .mura-index div div.item .title, .executive-committee .mura-index div div.item .title {
       margin-bottom: 0.8rem;
       text-align: center; }
-    .faculty .mura-index div div.item .summary div div:nth-child(1), .program-contacts .mura-index div div.item .summary div div:nth-child(1), .students .mura-index div div.item .summary div div:nth-child(1), .executive-committee .mura-index div div.item .summary div div:nth-child(1) {
+    .faculty .mura-index div div.item .summary div div:nth-child(1), .faculty .mura-index div div.item .summary div.mps-row div:nth-child(1), .program-contacts .mura-index div div.item .summary div div:nth-child(1), .program-contacts .mura-index div div.item .summary div.mps-row div:nth-child(1), .students .mura-index div div.item .summary div div:nth-child(1), .students .mura-index div div.item .summary div.mps-row div:nth-child(1), .executive-committee .mura-index div div.item .summary div div:nth-child(1), .executive-committee .mura-index div div.item .summary div.mps-row div:nth-child(1) {
       text-align: center;
       margin-bottom: 0.625rem; }
-    .faculty .mura-index div div.item .summary div div:nth-child(2), .program-contacts .mura-index div div.item .summary div div:nth-child(2), .students .mura-index div div.item .summary div div:nth-child(2), .executive-committee .mura-index div div.item .summary div div:nth-child(2) {
-      padding: 0px; }
+    .faculty .mura-index div div.item .summary div div:nth-child(2), .faculty .mura-index div div.item .summary div.mps-row div:nth-child(2), .program-contacts .mura-index div div.item .summary div div:nth-child(2), .program-contacts .mura-index div div.item .summary div.mps-row div:nth-child(2), .students .mura-index div div.item .summary div div:nth-child(2), .students .mura-index div div.item .summary div.mps-row div:nth-child(2), .executive-committee .mura-index div div.item .summary div div:nth-child(2), .executive-committee .mura-index div div.item .summary div.mps-row div:nth-child(2) {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; }
   .program-contacts .mura-index div div.item .summary {
     text-align: center; } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .faculty .mura-index div div.item .summary div div:nth-child(1), .program-contacts .mura-index div div.item .summary div div:nth-child(1), .students .mura-index div div.item .summary div div:nth-child(1), .executive-committee .mura-index div div.item .summary div div:nth-child(1) {
-    margin-bottom: 0.625rem; } }
+  .faculty .mura-index div div.item .summary div div:nth-child(1), .faculty .mura-index div div.item .summary div.mps-row div:nth-child(1), .program-contacts .mura-index div div.item .summary div div:nth-child(1), .program-contacts .mura-index div div.item .summary div.mps-row div:nth-child(1), .students .mura-index div div.item .summary div div:nth-child(1), .students .mura-index div div.item .summary div.mps-row div:nth-child(1), .executive-committee .mura-index div div.item .summary div div:nth-child(1), .executive-committee .mura-index div div.item .summary div.mps-row div:nth-child(1) {
+    margin-bottom: 0.625rem; }
+  .faculty .mura-index div div.item .summary div div:nth-child(2), .faculty .mura-index div div.item .summary div.mps-row div:nth-child(2), .program-contacts .mura-index div div.item .summary div div:nth-child(2), .program-contacts .mura-index div div.item .summary div.mps-row div:nth-child(2), .students .mura-index div div.item .summary div div:nth-child(2), .students .mura-index div div.item .summary div.mps-row div:nth-child(2), .executive-committee .mura-index div div.item .summary div div:nth-child(2), .executive-committee .mura-index div div.item .summary div.mps-row div:nth-child(2) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; } }
 
 /* STUDENT LIFE PAGE */
 .grad-guide {
