@@ -425,21 +425,31 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
             // Make links within summary (email, address) less bold
             font-weight: 400;
           }
+          div.mps-row {
+            div:nth-child(1) {
+              // Student and faculty address info shrinks and grows based on div:nth-child(2) size
+              flex-basis: 0;
+              flex-grow: 1;
+              max-width: 100%;
+            }
+          }
         }
       }
     }
   }
 }
-// Large screens
-@media (min-width: 992px) {
+
+// XL screens
+@media (min-width: 1200px) {
   .faculty, .program-contacts, .students, .executive-committee {
     .mura-index {
       div {
         div.item {
           .summary {
-            div.row {
-              div:nth-child(1) {
-                padding-right: 0; // Removes padding-right from contact information area div
+            div.row, div.mps-row {
+              div:nth-child(2) {
+                flex: 0 0 58.333333%;
+                max-width: 58.333333%;
               }
             }
           }
@@ -448,6 +458,28 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
     }
   }
 }
+
+// Large screens
+@media (min-width: 992px) and (max-width: 1199px) {
+  .faculty, .program-contacts, .students, .executive-committee {
+    .mura-index {
+      div {
+        div.item {
+          .summary {
+            div.row, div.mps-row {
+              div:nth-child(2) {
+                // Research summary takes up half the container
+                flex: 0 0 50%;
+                max-width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // Mobile devices
 @media only screen and (max-width: 767px) {
   .faculty, .program-contacts, .students, .executive-committee {
@@ -467,15 +499,16 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
             text-align: center;
           }
           .summary {
-            div {
+            div, div.mps-row {
               div:nth-child(1) {
                 // ONLY Faculty and Students: info/address center-aligned in small screens
                 text-align: center;
                 margin-bottom: 0.625rem;
               }
               div:nth-child(2) {
-                // Gives the research summary more space
-                padding: 0px;
+                // Research summary takes entire container
+                flex: 0 0 100%;
+                max-width: 100%;
               }
             }
           }
@@ -484,6 +517,7 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
     }
   }
   .program-contacts {
+    // Due to different page structure, applied text-center separately
     .mura-index {
       div {
         div.item {
@@ -502,10 +536,14 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
       div {
         div.item {
           .summary {
-            div {
+            div, div.mps-row {
               div:nth-child(1) {
                 // ONLY Faculty and Students: Creating gap between contact info and summary
                 margin-bottom: 0.625rem;
+              }
+              div:nth-child(2) {
+                flex: 0 0 100%;
+                max-width: 100%;
               }
             }
           }
