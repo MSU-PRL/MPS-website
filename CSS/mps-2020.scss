@@ -356,21 +356,6 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
   background: #eee;
 }
 
-.how-to-apply {
-  #MainContent {
-    h2 {
-      /* stylelint-disable */
-      @extend .mps-h2 ;
-      /* stylelint-enable */
-    }
-    h3 {
-      /* stylelint-disable */
-      @extend .mps-h3 ;
-      /* stylelint-enable */
-    }
-  }
-}
-
 
 /* MPS APPLICATION FORM */
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
