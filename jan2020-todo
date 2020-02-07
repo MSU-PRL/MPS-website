@@ -2,10 +2,8 @@ MPS REDESIGN 2020
 
 Redo README.md
 
-COURSEWORK & REQUIREMENTS AND RESOURCES PAGES:
-  Redo accordion or create new pages?
-  DONE:
-    - Ask Jesse if there will be accordion
+COURSEWORK & REQUIREMENTS PAGE:
+  - Turn from tabbed nav to TOC
 
 REMOVE BOOTSTRAP CSS FROM:
   - Faculty, Students, Program Contacts, Exec Committee pages: recreate bootstrap. DONE need to change markup
@@ -17,3 +15,5 @@ REMOVE BOOTSTRAP CSS FROM:
     - HOW TO APPLY PAGE
       - turn from tabbed nav to one page with TOC
       - Lots of Bootstrap CSS that has to go
+    - RESOURCES PAGE:
+      - turn from tabbed nav to one page with TOC
