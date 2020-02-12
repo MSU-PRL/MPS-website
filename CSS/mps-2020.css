@@ -7,6 +7,8 @@
   flex-wrap: wrap; }
 
 .mps-btn, .mps-btn-hollow, .mps-btn-sec-hollow, .mps-btn-sec, .mps-application-form #MainContent button.form-submit {
+  display: inline-block;
+  font-family: "Gotham SSm A","Gotham SSm B",arial,sans-serif;
   font-weight: 400 !important;
   text-transform: uppercase;
   text-decoration: none !important;
@@ -14,9 +16,13 @@
   color: black !important;
   background: #CB5A28;
   text-shadow: none;
-  transition: 0.15s linear;
-  -webkit-transition: 0.15s linear;
-  -webkit-appearance: none !important; }
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  border: 2px solid;
+  border-color: transparent;
+  cursor: pointer; }
   .mps-btn:hover, .mps-btn-hollow:hover, .mps-btn-sec-hollow:hover, .mps-btn-sec:hover, .mps-application-form #MainContent button.form-submit:hover, .mps-btn.focus, .focus.mps-btn-hollow, .focus.mps-btn-sec-hollow, .focus.mps-btn-sec, .mps-application-form #MainContent button.focus.form-submit, .mps-btn:focus, .mps-btn-hollow:focus, .mps-btn-sec-hollow:focus, .mps-btn-sec:focus, .mps-application-form #MainContent button.form-submit:focus, .mps-btn:active, .mps-btn-hollow:active, .mps-btn-sec-hollow:active, .mps-btn-sec:active, .mps-application-form #MainContent button.form-submit:active {
     color: #b24e23 !important;
     background: white;
@@ -25,7 +31,7 @@
 .mps-btn-hollow, .mps-btn-sec-hollow {
   color: #b24e23 !important;
   background: white;
-  border-color: #535054; }
+  border-color: #b24e23; }
   .mps-btn-hollow:hover, .mps-btn-sec-hollow:hover, .mps-btn-hollow.focus, .focus.mps-btn-sec-hollow, .mps-btn-hollow:focus, .mps-btn-sec-hollow:focus {
     color: black !important;
     background: #CB5A28;
@@ -54,12 +60,12 @@
     background: #006365;
     color: white; }
 
-.mps-h2, #homepage .mura-body.mainColContent h2, .how-to-apply #MainContent h2 {
+.mps-h2, #homepage .mura-body.mainColContent h2 {
   font-weight: 400;
   color: #18453B;
   letter-spacing: 1.5px; }
 
-.mps-h3, .how-to-apply #MainContent h3 {
+.mps-h3 {
   font-weight: 400;
   color: #b24e23;
   letter-spacing: 1.25px; }
@@ -79,7 +85,7 @@
 #homepage .mura-body.mainColContent h2 {
   text-align: center; }
 
-#homepage .mura-body.mainColContent .btn.btn-lg.mps-btn, #homepage .mura-body.mainColContent .btn.btn-lg.mps-btn-hollow, #homepage .mura-body.mainColContent .btn.btn-lg.mps-btn-sec-hollow, #homepage .mura-body.mainColContent .btn.btn-lg.mps-btn-sec, #homepage .mura-body.mainColContent .mps-application-form #MainContent button.btn.btn-lg.form-submit, .mps-application-form #MainContent #homepage .mura-body.mainColContent button.btn.btn-lg.form-submit {
+#homepage .mura-body.mainColContent #apply-btn > .mps-btn, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-hollow, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-sec-hollow, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-sec, #homepage .mura-body.mainColContent .mps-application-form #MainContent #apply-btn > button.form-submit, .mps-application-form #MainContent #homepage .mura-body.mainColContent #apply-btn > button.form-submit {
   margin-top: 12.5px;
   margin-top: 0.8rem; }
 
@@ -95,14 +101,14 @@
   text-align: center; }
 
 #homepage .mura-body.mainColContent .intro-header {
-  color: #b24e23;
+  color: #535054;
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 1.75px;
   line-height: 1.2; }
 
 #homepage .mura-body.mainColContent .fa {
-  color: #535054;
+  color: #b24e23;
   font-size: 3.45rem;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
@@ -202,14 +208,6 @@
 
 ul.nav-tabs > li.nav-item > a.nav-link.active {
   background: #eee; }
-
-.how-to-apply #MainContent h2 {
-  /* stylelint-disable */
-  /* stylelint-enable */ }
-
-.how-to-apply #MainContent h3 {
-  /* stylelint-disable */
-  /* stylelint-enable */ }
 
 /* MPS APPLICATION FORM */
 .mps-application-form #MainContent .mura-section {

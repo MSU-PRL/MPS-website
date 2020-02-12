@@ -3,7 +3,7 @@ MPS REDESIGN 2020
 Redo README.md
 
 Fixes post-Mura transition:
-- Buttons
+- Visit pages
 - Responsive layouts
 - Two-column homepage
 - Original news stories (some Bootstrap components in there)
@@ -14,6 +14,7 @@ REMOVE BOOTSTRAP CSS FROM:
 
 
 DONE:
+  - Buttons
   - Homepage
   - Remove Bootstrap CSS layout classes from all pages
   - Contact Us: simplify, no rows
