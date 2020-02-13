@@ -235,7 +235,7 @@ $sm-scn-margin: 0.2in !important;
   .mps-homepage-news {
     // Homepage Aside (second column)
     div.mura-index {
-      div.item {
+      div.hasImage {
         padding-left: 0 !important;
         .image {
           // Homepage Aside (second column): centered image with bottom padding
@@ -400,8 +400,9 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
 .faculty, .program-contacts, .students, .executive-committee {
   .mura-index {
     div {
-      div.item {
-        // MARGIN BOTTOM to be used only when images medium-sized (180 x 180)
+      div.hasImage {
+        // Condensing lines
+        line-height: 1.6;
         .image {
           img {
             padding: 0px;
@@ -415,54 +416,8 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
             // Make links within summary (email, address) less bold
             font-weight: 400;
           }
-          div.mps-row {
-            div:nth-child(1) {
-              // Student and faculty address info shrinks and grows based on div:nth-child(2) size
-              flex-basis: 0;
-              flex-grow: 1;
-              max-width: 100%;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// XL screens
-@media (min-width: 1200px) {
-  .faculty, .program-contacts, .students, .executive-committee {
-    .mura-index {
-      div {
-        div.item {
-          .summary {
-            div.row, div.mps-row {
-              div:nth-child(2) {
-                flex: 0 0 58.333333%;
-                max-width: 58.333333%;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// Large screens
-@media (min-width: 992px) and (max-width: 1199px) {
-  .faculty, .program-contacts, .students, .executive-committee {
-    .mura-index {
-      div {
-        div.item {
-          .summary {
-            div.row, div.mps-row {
-              div:nth-child(2) {
-                // Research summary takes up half the container
-                flex: 0 0 50%;
-                max-width: 50%;
-              }
-            }
+          p {
+            margin: 8px 0 0 0;
           }
         }
       }
@@ -475,8 +430,10 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
   .faculty, .program-contacts, .students, .executive-committee {
     .mura-index {
       div {
-        div.item {
+        div.hasImage {
+          font-size: 95%;
           padding-left: 0px !important;
+          padding-bottom: 1rem;
           border-bottom: 1px solid #eaeaea;
           .image {
             margin: 0 0 0.625rem 0;
@@ -489,17 +446,9 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
             text-align: center;
           }
           .summary {
-            div, div.mps-row {
-              div:nth-child(1) {
-                // ONLY Faculty and Students: info/address center-aligned in small screens
-                text-align: center;
-                margin-bottom: 0.625rem;
-              }
-              div:nth-child(2) {
-                // Research summary takes entire container
-                flex: 0 0 100%;
-                max-width: 100%;
-              }
+            div {
+              // ONLY Faculty and Students: info/address center-aligned in small screens
+              text-align: center;
             }
           }
         }
@@ -510,7 +459,7 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
     // Due to different page structure, applied text-center separately
     .mura-index {
       div {
-        div.item {
+        div.hasImage {
           .summary {
             text-align: center;
           }
@@ -519,30 +468,6 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
     }
   }
 }
-// Tablets to large screens
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .faculty, .program-contacts, .students, .executive-committee {
-    .mura-index {
-      div {
-        div.item {
-          .summary {
-            div, div.mps-row {
-              div:nth-child(1) {
-                // ONLY Faculty and Students: Creating gap between contact info and summary
-                margin-bottom: 0.625rem;
-              }
-              div:nth-child(2) {
-                flex: 0 0 100%;
-                max-width: 100%;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 
 /* STUDENT LIFE PAGE */
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -583,7 +508,7 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
 .news {
   .mura-index {
     div {
-      div.item {
+      div.hasImage {
         padding-top: 12px !important; // Important declaration to override the .last styling
         padding-right: 12px;
       }
@@ -595,7 +520,7 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
   .news {
     .mura-index {
       div {
-        div.item {
+        div.hasImage {
           padding: 0 0 6px 0 !important;
           border-bottom: 1px solid #f5f5f5;
           .image {

@@ -1,17 +1,12 @@
 MPS REDESIGN 2020
 
-Redo README.md
-
 Fixes post-Mura transition:
 - Visit pages
 - Responsive layouts
 - Two-column homepage
 - Original news stories (some Bootstrap components in there)
-
-REMOVE BOOTSTRAP CSS FROM:
-  - Redesign FoPD (remember we have the no sideCol option with new Mura)
-  - Faculty, Students, Program Contacts, Exec Committee pages: change markup to remove Bootstrap CSS
-
+- Redesign FoPD (remember we have the no sideCol option with new Mura)
+- Redo README.md
 
 DONE:
   - Buttons
@@ -25,4 +20,6 @@ DONE:
     - turn from tabbed nav to one page with TOC
   COURSEWORK & REQUIREMENTS PAGE:
     - Turn from tabbed nav to TOC
-  - Faculty, Students, Program Contacts, Exec Committee pages: recreate bootstrap. DONE 
+  - Faculty, Students, Program Contacts, Exec Committee pages: recreate bootstrap. DONE
+  - Fixed How to Apply page
+  - Faculty, Students, Program Contacts, Exec Committee pages: change markup to remove Bootstrap CSS
