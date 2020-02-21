@@ -1,9 +1,9 @@
 MPS REDESIGN 2020
 
 Fixes post-Mura transition:
+- Redesign FoPD - ONGOING
 - Two-column homepage
 - Original news stories (some Bootstrap components in there)
-- Redesign FoPD (remember we have the no sideCol option with new Mura)
 - Redo README.md
 
 DONE:
