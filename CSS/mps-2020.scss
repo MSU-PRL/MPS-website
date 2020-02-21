@@ -540,21 +540,11 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
 .fascination-of-plants-day-msu {
   // NAV
-  ol#crumblist {
-    // Take away breadcrumb list
-    display: none;
-  }
-  h1.mura-page-title.pageTitle {
-    // Remove default page title
+  ol#crumblist, h1.mura-page-title.pageTitle {
+    // Take away breadcrumb list and page title
     display: none;
   }
   #MainContent {
-    // Make main column span entire page
-    width: 100%;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
     h1, h2 {
       // Style headers throughout page
       font-weight: 400;
@@ -572,13 +562,8 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
   }
   .mps-fopd-hero-text {
     // Hero Area
-    background: url(/sites/_pmsb/assets/Image/Fascination_of_Plants_Day/2019/_HJS4370-bg-solid-web-sm.jpg) center;
-    padding: 273px 0 154px 0;
+    padding: 32px 0;
     text-align: center;
-    h1, h2 {
-      color: #fff !important;
-      text-shadow: 3px 3px black;
-    }
     h1 {
       font-size: 2.8rem;
     }
@@ -599,10 +584,10 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
     h2 {
       // Styling h2
       font-size: 30px;
-      font-weight: 600 !important;
       margin-top: 0;
       a {
         text-decoration: none;
+        font-weight: 300;
       }
     }
     h3 {
@@ -644,6 +629,7 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
       h3 {
         font-size: 21px;
         text-align: center;
+        text-transform: capitalize;
       }
       ul {
         margin-bottom: 20px;
@@ -732,6 +718,9 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
 @media (min-width: 768px) and (max-width: 991px) {
   // Tablets
   .fascination-of-plants-day-msu {
+    .heroBanner-sectionFront {
+      height: 40vh;
+    }
     .mps-fopd-hero-text {
       h1 {
         font-size: 2.5rem;
@@ -760,15 +749,11 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
 @media (max-width: 767px) {
   .fascination-of-plants-day-msu {
     .mps-fopd-hero-text {
-      // Hero image for mobile
-      padding: 75px 15px;
-      margin: 0 -15px;
-      background-size: cover;
       h1 {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
       }
       h2 {
-        font-size: 1.9rem;
+        font-size: 1.75rem;
       }
     }
     .mps-fopd-content {
@@ -815,10 +800,4 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
       }
     }
   }
-}
-
-/* HOMEPAGE OVERRIDES */
-// -----------------------------------------------------------------------------------------------------------------------------------------------------
-.collegeName {
-  display: none;
 }
