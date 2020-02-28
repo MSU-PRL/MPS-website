@@ -1,7 +1,6 @@
 MPS REDESIGN 2020
 
 Fixes post-Mura transition:
-- Redesign FoPD - ONGOING
 - Two-column homepage
 - Original news stories (some Bootstrap components in there)
 - Redo README.md
@@ -23,3 +22,4 @@ DONE:
   - Faculty, Students, Program Contacts, Exec Committee pages: change markup to remove Bootstrap CSS
   - Visit pages
   - Responsive layouts
+  - Redesign FoPD

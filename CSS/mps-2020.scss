@@ -605,15 +605,12 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
       font-weight: 200;
       font-size: 18px;
     }
-    .mps-btn-hollow {
-      // Adding space to buttons
-      margin-bottom: 30px;
-    }
     .mps-fopd-top-btns {
       // Aligning two top buttons in the section under the Hero image
-      div {
-        float: left;
-      }
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 24px 0;
     }
     .mps-fopd-card {
       // Activities cards
@@ -646,6 +643,9 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
       margin-left: auto;
       margin-right: auto;
     }
+    .mps-fopd-address, .mps-fopd-google-map {
+      padding: 0 15px;
+    }
     div.fopd-partner-logos {
       // Aligning and spacing out logos under "Our Partners" section
       margin-bottom: 40px;
@@ -655,18 +655,18 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
         padding-bottom: 50px;
       }
     }
-    div.fopd-sponsors {
+    div.mps-fopd-sponsors {
       // Sponsors section
       h2 {
         // Adding some padding between h2 and logos
         padding-bottom: 20px;
       }
     }
-    div.fopd-logos {
+    div.mps-fopd-logos {
       // Logo display sections
       display: flex;
       flex-flow: row wrap;
-      div.fopd-logo {
+      div.mps-fopd-logo {
         // Creating space between logos
         height: 100px;
         padding: 0 15px;
@@ -719,9 +719,9 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
         flex: 0 0 33.333333%;
         padding: 0 15px;
       }
-      div.fopd-logos {
+      div.mps-fopd-logos {
         // Logo spacing for medium screens
-        div.fopd-logo {
+        div.mps-fopd-logo {
           flex: 0 0 50%; 
         }
       }
@@ -740,9 +740,15 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
         flex: 0 0 100%;
         padding: 0 15px;
       }
-      div.fopd-logos {
+      .mps-fopd-address {
+        flex: 0 0 41.666667%;
+      }
+      .mps-fopd-google-map {
+        flex: 0 0 58.333333%;
+      }
+      div.mps-fopd-logos {
         // Logo spacing for large screens
-        div.fopd-logo {
+        div.mps-fopd-logo {
           flex: 0 0 33.333333%; 
         }
       }
@@ -795,6 +801,11 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
       div.mps-row {
         padding-top: 27px;
       }
+      .mps-fopd-top-btns {
+        flex-direction: column;
+      justify-content: space-between;
+      height: 112px;
+      }
       .mps-fopd-card {
         margin-bottom: 40px;
         img {
@@ -802,7 +813,7 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
           width: 100%;
         }
       }
-      div.fopd-logos {
+      div.mps-fopd-logos {
         div {
           // Shorter logo height
           height: 90px;

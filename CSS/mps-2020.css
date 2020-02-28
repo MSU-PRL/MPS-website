@@ -345,11 +345,17 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
   font-weight: 200;
   font-size: 18px; }
 
-.fascination-of-plants-day-msu .mps-fopd-content .mps-btn-hollow, .fascination-of-plants-day-msu .mps-fopd-content .mps-btn-sec-hollow {
-  margin-bottom: 30px; }
-
-.fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-top-btns div {
-  float: left; }
+.fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-top-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0; }
 
 .fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-card {
   margin-bottom: 50px; }
@@ -376,16 +382,19 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
   margin-left: auto;
   margin-right: auto; }
 
+.fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-address, .fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-google-map {
+  padding: 0 15px; }
+
 .fascination-of-plants-day-msu .mps-fopd-content div.fopd-partner-logos {
   margin-bottom: 40px;
   text-align: center; }
   .fascination-of-plants-day-msu .mps-fopd-content div.fopd-partner-logos .mps-fopd-flex-md-50:first-of-type {
     padding-bottom: 50px; }
 
-.fascination-of-plants-day-msu .mps-fopd-content div.fopd-sponsors h2 {
+.fascination-of-plants-day-msu .mps-fopd-content div.mps-fopd-sponsors h2 {
   padding-bottom: 20px; }
 
-.fascination-of-plants-day-msu .mps-fopd-content div.fopd-logos {
+.fascination-of-plants-day-msu .mps-fopd-content div.mps-fopd-logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +402,7 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
-  .fascination-of-plants-day-msu .mps-fopd-content div.fopd-logos div.fopd-logo {
+  .fascination-of-plants-day-msu .mps-fopd-content div.mps-fopd-logos div.mps-fopd-logo {
     height: 100px;
     padding: 0 15px; }
 
@@ -430,7 +439,7 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
         -ms-flex: 0 0 33.333333%;
             flex: 0 0 33.333333%;
     padding: 0 15px; }
-  .fascination-of-plants-day-msu .mps-fopd-content div.fopd-logos div.fopd-logo {
+  .fascination-of-plants-day-msu .mps-fopd-content div.mps-fopd-logos div.mps-fopd-logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; } }
@@ -446,7 +455,15 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     padding: 0 15px; }
-  .fascination-of-plants-day-msu .mps-fopd-content div.fopd-logos div.fopd-logo {
+  .fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-address {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
+            flex: 0 0 41.666667%; }
+  .fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-google-map {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
+            flex: 0 0 58.333333%; }
+  .fascination-of-plants-day-msu .mps-fopd-content div.mps-fopd-logos div.mps-fopd-logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
             flex: 0 0 33.333333%; } }
@@ -473,12 +490,21 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
     font-size: 1.75rem; }
   .fascination-of-plants-day-msu .mps-fopd-content div.mps-row {
     padding-top: 27px; }
+  .fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-top-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 112px; }
   .fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-card {
     margin-bottom: 40px; }
     .fascination-of-plants-day-msu .mps-fopd-content .mps-fopd-card img {
       margin-bottom: 16px;
       width: 100%; }
-  .fascination-of-plants-day-msu .mps-fopd-content div.fopd-logos div {
+  .fascination-of-plants-day-msu .mps-fopd-content div.mps-fopd-logos div {
     height: 90px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
