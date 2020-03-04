@@ -6,7 +6,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.mps-btn, .mps-btn-hollow, .mps-btn-sec-hollow, .mps-btn-sec, .mps-application-form #MainContent button.form-submit {
+.mps-btn, .mps-btn-hollow, .mps-btn-sec-hollow, .mps-btn-sec, .whatsNew__readMore, .mps-application-form #MainContent button.form-submit {
   display: inline-block;
   font-family: "Gotham SSm A","Gotham SSm B",arial,sans-serif;
   font-weight: 400 !important;
@@ -23,7 +23,7 @@
   border: 2px solid;
   border-color: transparent;
   cursor: pointer; }
-  .mps-btn:hover, .mps-btn-hollow:hover, .mps-btn-sec-hollow:hover, .mps-btn-sec:hover, .mps-application-form #MainContent button.form-submit:hover, .mps-btn.focus, .focus.mps-btn-hollow, .focus.mps-btn-sec-hollow, .focus.mps-btn-sec, .mps-application-form #MainContent button.focus.form-submit, .mps-btn:focus, .mps-btn-hollow:focus, .mps-btn-sec-hollow:focus, .mps-btn-sec:focus, .mps-application-form #MainContent button.form-submit:focus, .mps-btn:active, .mps-btn-hollow:active, .mps-btn-sec-hollow:active, .mps-btn-sec:active, .mps-application-form #MainContent button.form-submit:active {
+  .mps-btn:hover, .mps-btn-hollow:hover, .mps-btn-sec-hollow:hover, .mps-btn-sec:hover, .whatsNew__readMore:hover, .mps-application-form #MainContent button.form-submit:hover, .mps-btn.focus, .focus.mps-btn-hollow, .focus.mps-btn-sec-hollow, .focus.mps-btn-sec, .focus.whatsNew__readMore, .mps-application-form #MainContent button.focus.form-submit, .mps-btn:focus, .mps-btn-hollow:focus, .mps-btn-sec-hollow:focus, .mps-btn-sec:focus, .whatsNew__readMore:focus, .mps-application-form #MainContent button.form-submit:focus, .mps-btn:active, .mps-btn-hollow:active, .mps-btn-sec-hollow:active, .mps-btn-sec:active, .whatsNew__readMore:active, .mps-application-form #MainContent button.form-submit:active {
     color: #b24e23 !important;
     background: white;
     border-color: #535054; }
@@ -60,9 +60,8 @@
     background: #006365;
     color: white; }
 
-.mps-h2, #homepage .mura-body.mainColContent h2 {
-  font-weight: 400;
-  color: #18453B;
+.mps-h2, .collegeEvents__heading, .whatsNew__heading, #homepage .mura-body.mainColContent h2 {
+  font-size: 2.1rem;
   letter-spacing: 1.5px; }
 
 .mps-h3 {
@@ -82,29 +81,34 @@
     padding: 4px; } }
 
 /* HOMEPAGE */
+.collegeEvents__day {
+  background: #b24e23; }
+
+.collegeEvents__date, .collegeEvents__event {
+  border-color: #b24e23; }
+
+.departmentHome .whatsNew__featuredItem {
+  display: none; }
+
 #homepage .mura-body.mainColContent h2 {
   text-align: center; }
 
-#homepage .mura-body.mainColContent #apply-btn > .mps-btn, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-hollow, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-sec-hollow, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-sec, #homepage .mura-body.mainColContent .mps-application-form #MainContent #apply-btn > button.form-submit, .mps-application-form #MainContent #homepage .mura-body.mainColContent #apply-btn > button.form-submit {
+#homepage .mura-body.mainColContent #apply-btn > .mps-btn, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-hollow, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-sec-hollow, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-sec, #homepage .mura-body.mainColContent #apply-btn > .whatsNew__readMore, #homepage .mura-body.mainColContent .mps-application-form #MainContent #apply-btn > button.form-submit, .mps-application-form #MainContent #homepage .mura-body.mainColContent #apply-btn > button.form-submit {
   margin-top: 12.5px;
   margin-top: 0.8rem; }
 
-#homepage .mura-body.mainColContent hr {
-  width: 95%;
-  margin-top: 1.875rem;
-  margin-bottom: 1.875rem; }
-
-#homepage .mura-body.mainColContent .mps-home-intro p {
-  text-align: center; }
-
-#homepage .mura-body.mainColContent .mps-home-intro #apply-btn {
-  text-align: center; }
+#homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-home-why {
+  max-width: 80%;
+  margin: 0 auto; }
+  #homepage .mura-body.mainColContent .mps-home-intro p, #homepage .mura-body.mainColContent .mps-home-why p {
+    text-align: center; }
+  #homepage .mura-body.mainColContent .mps-home-intro #apply-btn, #homepage .mura-body.mainColContent .mps-home-why #apply-btn {
+    text-align: center; }
 
 #homepage .mura-body.mainColContent .intro-header {
-  color: #535054;
   font-size: 1.25rem;
   font-weight: 400;
-  letter-spacing: 1.75px;
+  letter-spacing: 1.15px;
   line-height: 1.2; }
 
 #homepage .mura-body.mainColContent .fa {
@@ -113,53 +117,53 @@
   -webkit-transition: 0.5s;
   transition: 0.5s; }
 
-#homepage .mura-body.mainColContent .mps-icons-home hr {
-  margin-top: 12px;
-  margin-bottom: 12px; }
-
-#homepage .mura-body.mainColContent .mps-icon-area:first-of-type {
-  padding-top: 10px;
-  padding-top: 1rem; }
+#homepage .mura-body.mainColContent .mps-icons-home.mps-row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 #homepage .mura-body.mainColContent .mps-icon-area {
-  padding-top: 1.875rem;
-  padding-bottom: 1.25rem; }
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  padding: 0 6px; }
   #homepage .mura-body.mainColContent .mps-icon-area .mps-icon {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
-    max-width: 25%; }
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-top: 32px; }
   #homepage .mura-body.mainColContent .mps-icon-area .mps-icon-text {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 66.666667%;
-            flex: 0 0 66.666667%;
-    max-width: 66.666667%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     letter-spacing: 0.25px; }
   #homepage .mura-body.mainColContent .mps-icon-area ul {
-    margin-bottom: 20px;
-    margin-bottom: 1.25rem; }
-  #homepage .mura-body.mainColContent .mps-icon-area p, #homepage .mura-body.mainColContent .mps-icon-area h3 {
+    -webkit-margin-before: .5em;
+            margin-block-start: .5em;
+    -webkit-padding-start: 30px;
+            padding-inline-start: 30px;
+    list-style: circle; }
+  #homepage .mura-body.mainColContent .mps-icon-area div.mps-icon, #homepage .mura-body.mainColContent .mps-icon-area div.mps-icon-button {
     text-align: center; }
 
-#homepage .mps-homepage-news div.mura-index div.hasImage {
-  padding-left: 0 !important; }
-  #homepage .mps-homepage-news div.mura-index div.hasImage .image {
-    position: relative;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    padding-bottom: 0.625rem;
-    text-align: center; }
-  #homepage .mps-homepage-news div.mura-index div.hasImage .summary {
-    font-size: 0.92rem; }
-
-#homepage .mps-pre-footer {
-  padding: 0 12px; }
+#homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-home-why, #homepage .mura-body.mainColContent .mps-icons-home {
+  margin-bottom: 62px; }
 
 @media (max-width: 991px) {
-  #homepage .mura-body.mainColContent .mps-home-intro p {
-    text-align: left; }
-  #homepage .mps-pre-footer {
-    text-align: center; } }
+  #homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-home-why {
+    max-width: 100%; }
+    #homepage .mura-body.mainColContent .mps-home-intro p, #homepage .mura-body.mainColContent .mps-home-why p {
+      text-align: left; }
+  #homepage .mura-body.mainColContent .mps-icons-home.mps-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  #homepage .mura-body.mainColContent .mps-icon-area {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding: 0; } }
 
 @media (max-width: 768px) {
   #homepage .mura-body.mainColContent .mps-icon-area .mps-icon, #homepage .mura-body.mainColContent .mps-icon-area .mps-icon-text {

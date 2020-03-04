@@ -121,8 +121,7 @@ $sm-scn-margin: 0.2in !important;
 // General Style Overrides
 .mps-h2 {
   // Alternate H2
-  font-weight: 400;
-  color: $msu-color;
+  font-size: 2.1rem;
   letter-spacing: 1.5px;
 }
 
@@ -156,11 +155,32 @@ $sm-scn-margin: 0.2in !important;
 
 /* HOMEPAGE */
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
+//CNS Overrides
+.collegeEvents__heading, .whatsNew__heading {
+  // Outside of #homepage for CSS specifity reasons
+  @extend .mps-h2;
+}
+.collegeEvents__day {
+  background: $primary-darker;
+}
+
+.collegeEvents__date, .collegeEvents__event {
+  border-color: $primary-darker;
+}
+
+.whatsNew__readMore {
+  @extend .mps-btn;
+}
+
+.departmentHome .whatsNew__featuredItem {
+  display: none;
+}
+
 #homepage {
   .mura-body.mainColContent {
     h2 {
       // H2 headers
-      @extend .mps-h2 ;
+      @extend .mps-h2;
       text-align: center;
     }
     #apply-btn > .mps-btn {
@@ -168,13 +188,10 @@ $sm-scn-margin: 0.2in !important;
       margin-top: 12.5px;
       margin-top: 0.8rem;
     }
-    hr {
-      // Homepage line break style
-      width: 95%;
-      margin-top: 1.875rem;
-      margin-bottom: 1.875rem;
-    }
-    .mps-home-intro {
+    .mps-home-intro, .mps-home-why {
+      // 'Marketing' language
+      max-width: 80%;
+      margin: 0 auto;
       p {
         text-align: center;
       }
@@ -184,10 +201,10 @@ $sm-scn-margin: 0.2in !important;
     }
     .intro-header {
       // Homepage Icon Area: icon header
-      color: $sec-plum-grey;
+      // color: $sec-plum-grey;
       font-size: 1.25rem;
       font-weight: 400;
-      letter-spacing: 1.75px;
+      letter-spacing: 1.15px;
       line-height: 1.2;
     }
     .fa {
@@ -197,64 +214,36 @@ $sm-scn-margin: 0.2in !important;
       -webkit-transition: 0.5s;
       transition: 0.5s;
     }
-    .mps-icons-home {
-      hr {
-        margin-top: 12px;
-        margin-bottom: 12px;
-      }
-    }
-    .mps-icon-area:first-of-type {
-      padding-top: 10px; // for IE8
-      padding-top: 1rem;
+    .mps-icons-home.mps-row {
+      flex-wrap: nowrap;
+      align-items: flex-start;
     }
     .mps-icon-area {
       // Homepage Icon Area:
-      padding-top: 1.875rem;
-      padding-bottom: 1.25rem;
+      flex: 0 0 33%;
+      padding: 0 6px;
       .mps-icon {
         // Icon image layout
-        flex: 0 0 25%;
-        max-width: 25%;
+        flex: 0 0 100%;
+        margin-top: 32px;
       }
       .mps-icon-text {
         // Icon summary text layout
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
+        flex: 0 0 100%;
         letter-spacing: 0.25px;
       }
       ul {
-        // Homepage Icon Area: smaller list font and bottom margin to separate from button
-        margin-bottom: 20px; // For IE8
-        margin-bottom: 1.25rem;
+        margin-block-start: .5em;
+        padding-inline-start: 30px;
+        list-style: circle;
       }
-      p, h3 {
+      div.mps-icon, div.mps-icon-button {
         text-align: center;
       }
     }
-  }
-  .mps-homepage-news {
-    // Homepage Aside (second column)
-    div.mura-index {
-      div.hasImage {
-        padding-left: 0 !important;
-        .image {
-          // Homepage Aside (second column): centered image with bottom padding
-          position: relative;
-          margin: 0 auto;
-          padding-bottom: 10px;
-          padding-bottom: 0.625rem;
-          text-align: center;
-        }
-        .summary {
-          // Homepage Aside (second column): smaller summary font
-          font-size: 0.92rem;
-        }
-      }
+    .mps-home-intro, .mps-home-why, .mps-icons-home {
+      margin-bottom: 62px;
     }
-  }
-  .mps-pre-footer {
-    /// Pre-footer that has the links to "College of Natural Sciences" and "College of Agriculture and Natural Resources" - padding to align with footer menu
-    padding: 0 12px;
   }
 }
 
@@ -262,15 +251,20 @@ $sm-scn-margin: 0.2in !important;
   // Tablet and Mobile
   #homepage {
     .mura-body.mainColContent {
-      .mps-home-intro {
+      .mps-home-intro, .mps-home-why {
+        max-width: 100%;
         p {
           text-align: left;
         }
       }
-    }
-    .mps-pre-footer {
-      // Pre-footer that has the links to "College of Natural Sciences" and "College of Agriculture and Natural Resources" - centered text
-      text-align: center;
+      .mps-icons-home.mps-row {
+        flex-wrap: wrap;
+      }
+      .mps-icon-area {
+        // Homepage Icon Area:
+        flex: 0 0 100%;
+        padding: 0;
+      }
     }
   }
 }

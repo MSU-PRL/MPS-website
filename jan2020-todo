@@ -1,7 +1,6 @@
 MPS REDESIGN 2020
 
 Fixes post-Mura transition:
-- Two-column homepage
 - Original news stories (some Bootstrap components in there)
 - Redo README.md
 
@@ -23,3 +22,4 @@ DONE:
   - Visit pages
   - Responsive layouts
   - Redesign FoPD
+  - Redesign Homepage
