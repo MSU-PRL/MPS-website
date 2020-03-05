@@ -72,13 +72,9 @@
 .mps-color-highlight {
   color: #b24e23; }
 
-.overview .secondaryPageWrapper .mainCol .associatedImage, .contact-us .secondaryPageWrapper .mainCol .associatedImage, .academic-program .secondaryPageWrapper .mainCol .associatedImage, .financial-aid .secondaryPageWrapper .mainCol .associatedImage, .coursework-requirements .secondaryPageWrapper .mainCol .associatedImage, .student-life .secondaryPageWrapper .mainCol .associatedImage, .resources .secondaryPageWrapper .mainCol .associatedImage {
-  float: none;
-  margin: 10px 0 40px 0; }
-
-@media (max-width: 768px) {
-  .secondaryPageWrapper .mainCol img {
-    padding: 4px; } }
+@media (min-width: 768px) {
+  .heroBanner-secondaryPage, .heroBanner-sectionFront {
+    background-position: 0% 43% !important; } }
 
 /* HOMEPAGE */
 .collegeEvents__day {
@@ -97,13 +93,16 @@
   margin-top: 12.5px;
   margin-top: 0.8rem; }
 
-#homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-home-why {
+#homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-home-why-pg {
   max-width: 80%;
   margin: 0 auto; }
-  #homepage .mura-body.mainColContent .mps-home-intro p, #homepage .mura-body.mainColContent .mps-home-why p {
+  #homepage .mura-body.mainColContent .mps-home-intro p, #homepage .mura-body.mainColContent .mps-home-why-pg p {
     text-align: center; }
-  #homepage .mura-body.mainColContent .mps-home-intro #apply-btn, #homepage .mura-body.mainColContent .mps-home-why #apply-btn {
+  #homepage .mura-body.mainColContent .mps-home-intro #apply-btn, #homepage .mura-body.mainColContent .mps-home-why-pg #apply-btn {
     text-align: center; }
+
+#homepage .mura-body.mainColContent .mps-home-why-pg {
+  text-align: center; }
 
 #homepage .mura-body.mainColContent .intro-header {
   font-size: 1.25rem;
@@ -144,17 +143,19 @@
             margin-block-start: .5em;
     -webkit-padding-start: 30px;
             padding-inline-start: 30px;
-    list-style: circle; }
+    list-style: circle;
+    letter-spacing: -.15px; }
   #homepage .mura-body.mainColContent .mps-icon-area div.mps-icon, #homepage .mura-body.mainColContent .mps-icon-area div.mps-icon-button {
     text-align: center; }
 
-#homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-home-why, #homepage .mura-body.mainColContent .mps-icons-home {
+#homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-icons-home {
   margin-bottom: 62px; }
 
 @media (max-width: 991px) {
-  #homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-home-why {
-    max-width: 100%; }
-    #homepage .mura-body.mainColContent .mps-home-intro p, #homepage .mura-body.mainColContent .mps-home-why p {
+  #homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-home-why-pg {
+    max-width: 100%;
+    text-align: left; }
+    #homepage .mura-body.mainColContent .mps-home-intro p, #homepage .mura-body.mainColContent .mps-home-why-pg p {
       text-align: left; }
   #homepage .mura-body.mainColContent .mps-icons-home.mps-row {
     -ms-flex-wrap: wrap;
