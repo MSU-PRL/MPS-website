@@ -137,21 +137,12 @@ $sm-scn-margin: 0.2in !important;
   color: $primary-darker;
 }
 
-// Page Associated Thumbnails
-.overview, .contact-us, .academic-program, .financial-aid, .coursework-requirements, .student-life, .resources {
-  .secondaryPageWrapper .mainCol .associatedImage {
-    // Associated image thumbnails for *SELECTED* pages are set at Large. Removing floats allows them to become full-width, while maintaining a small size.
-    float: none;
-    margin: 10px 0 40px 0;
+@media (min-width: 768px) {
+  .heroBanner-secondaryPage, .heroBanner-sectionFront {
+    // Secondary page hero banner positioning
+    background-position: 0% 43% !important;
   }
 }
-@media (max-width: 768px) {
-  .secondaryPageWrapper .mainCol img {
-    // For phones, reduce padding from 10px to 4px so picture breathes.
-    padding: 4px;
-  }
-}
-
 
 /* HOMEPAGE */
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -188,7 +179,7 @@ $sm-scn-margin: 0.2in !important;
       margin-top: 12.5px;
       margin-top: 0.8rem;
     }
-    .mps-home-intro, .mps-home-why {
+    .mps-home-intro, .mps-home-why-pg {
       // 'Marketing' language
       max-width: 80%;
       margin: 0 auto;
@@ -198,6 +189,9 @@ $sm-scn-margin: 0.2in !important;
       #apply-btn {
         text-align: center;
       }
+    }
+    .mps-home-why-pg {
+      text-align: center;
     }
     .intro-header {
       // Homepage Icon Area: icon header
@@ -236,12 +230,13 @@ $sm-scn-margin: 0.2in !important;
         margin-block-start: .5em;
         padding-inline-start: 30px;
         list-style: circle;
+        letter-spacing: -.15px;
       }
       div.mps-icon, div.mps-icon-button {
         text-align: center;
       }
     }
-    .mps-home-intro, .mps-home-why, .mps-icons-home {
+    .mps-home-intro, .mps-icons-home {
       margin-bottom: 62px;
     }
   }
@@ -251,8 +246,9 @@ $sm-scn-margin: 0.2in !important;
   // Tablet and Mobile
   #homepage {
     .mura-body.mainColContent {
-      .mps-home-intro, .mps-home-why {
+      .mps-home-intro, .mps-home-why-pg {
         max-width: 100%;
+        text-align: left;
         p {
           text-align: left;
         }
