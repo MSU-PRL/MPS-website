@@ -1,7 +1,7 @@
 MPS REDESIGN 2020
 
 Fixes post-Mura transition:
-- Original news stories (some Bootstrap components in there)
+- Delete unused CSS
 - Redo README.md
 
 DONE:
@@ -23,3 +23,4 @@ DONE:
   - Responsive layouts
   - Redesign FoPD
   - Redesign Homepage
+  - Original news stories (some Bootstrap components in there)
