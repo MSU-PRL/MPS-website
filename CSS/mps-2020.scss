@@ -132,16 +132,19 @@ $sm-scn-margin: 0.2in !important;
   letter-spacing: 1.25px;
 }
 
-.mps-color-highlight {
-  // To highlight <p> text with primary color
-  color: $primary-darker;
-}
-
 @media (min-width: 768px) {
   .heroBanner-secondaryPage, .heroBanner-sectionFront {
     // Secondary page hero banner positioning
     background-position: 0% 43% !important;
   }
+}
+
+form .mura-group-label>ins, form .req label>ins{
+  background-color: $primary-darker;
+}
+
+form .form-submit {
+  @extend .mps-btn;
 }
 
 /* HOMEPAGE */
@@ -289,7 +292,7 @@ $sm-scn-margin: 0.2in !important;
 
 /* CONTACT US and PROGRAM CONTACTS: Orange fonticon */
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
-.contact-us .sideCol, .program-contacts .mura-index,  .faculty .mura-index, .students .mura-index, .executive-committee .mura-index {
+.contact-us .mainContent__sideCol, .program-contacts .mura-index,  .faculty .mura-index, .students .mura-index, .executive-committee .mura-index {
   .fa {
     color: $primary-darker;
   }
@@ -329,26 +332,6 @@ $sm-scn-margin: 0.2in !important;
       }
     }
   }
-}
-
-
-/* HOW TO APPLY: Tabs styling */
-// -----------------------------------------------------------------------------------------------------------------------------------------------------
-@media (min-width: 768px) {
-  .mps-tabs-border {
-    // Adding border to the tab area, only tablet and desktop
-    display: inline-block;
-  }
-  .tab-content {
-    border-bottom: 1px solid #eaeaea;
-    border-left: 1px solid #eaeaea;
-    border-right: 1px solid #eaeaea;
-  }
-}
-
-ul.nav-tabs > li.nav-item > a.nav-link.active {
-  // Changing the color of the active tabs
-  background: #eee;
 }
 
 
@@ -459,40 +442,6 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
   }
 }
 
-/* STUDENT LIFE PAGE */
-// -----------------------------------------------------------------------------------------------------------------------------------------------------
-// Styling the Unofficial Grad Guide Aside
-.grad-guide {
-  display: inline-block;
-  .sec-heading-red-orange {
-    background: $primary-darker;
-  }
-  h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 0;
-    padding: 6px;
-  }
-  .well {
-    background: transparent;
-  }
-  .grad-guide-img {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-bottom: 16px;
-  }
-}
-
-.student-life {
-  figure {
-    // Override CNS Figure stylings for this page
-    max-width: 100%;
-    background: none;
-    border: 0px;
-  }
-}
-
 /* NEWS PAGE: Content Layout */
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
 .news {
@@ -526,7 +475,7 @@ ul.nav-tabs > li.nav-item > a.nav-link.active {
   }
 }
 
-/* Fascination of Plants Day @ MSU: Temporary Page */
+/* Fascination of Plants Day @ MSU */
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
 .fascination-of-plants-day-msu {
   // NAV
