@@ -177,19 +177,11 @@ form .form-submit {
       @extend .mps-h2;
       text-align: center;
     }
-    #apply-btn > .mps-btn {
-      // Apply Now Button: spaced away from first paragraph*/
-      margin-top: 12.5px;
-      margin-top: 0.8rem;
-    }
     .mps-home-intro, .mps-home-why-pg {
       // 'Marketing' language
       max-width: 80%;
       margin: 0 auto;
       p {
-        text-align: center;
-      }
-      #apply-btn {
         text-align: center;
       }
     }
@@ -475,6 +467,13 @@ form .form-submit {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  // Hero image alignment for news articles
+  .newsArticle section.heroBanner.heroBanner-news {
+    background-size: cover !important;
+  }
+}
+
 /* Fascination of Plants Day @ MSU */
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
 .fascination-of-plants-day-msu {
@@ -492,10 +491,6 @@ form .form-submit {
     }
     label {
       // Do not display any labels
-      display: none;
-    }
-    .a2a_kit.a2a_kit_size_32.a2a_default_style.social-share {
-      // Do not display social shares
       display: none;
     }
   }
@@ -534,9 +529,6 @@ form .form-submit {
       font-weight: 300;
       color: #18453B;
       margin-top: 0;
-      a {
-        text-decoration: none;
-      }
     }
     p.lead {
       // Styling Lead paragraph under hero image
