@@ -89,16 +89,10 @@ form .mura-group-label > ins, form .req label > ins {
 #homepage .mura-body.mainColContent h2 {
   text-align: center; }
 
-#homepage .mura-body.mainColContent #apply-btn > .mps-btn, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-hollow, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-sec-hollow, #homepage .mura-body.mainColContent #apply-btn > .mps-btn-sec, #homepage .mura-body.mainColContent form #apply-btn > .form-submit, form #homepage .mura-body.mainColContent #apply-btn > .form-submit, #homepage .mura-body.mainColContent #apply-btn > .whatsNew__readMore, #homepage .mura-body.mainColContent .mps-application-form #MainContent #apply-btn > button.form-submit, .mps-application-form #MainContent #homepage .mura-body.mainColContent #apply-btn > button.form-submit {
-  margin-top: 12.5px;
-  margin-top: 0.8rem; }
-
 #homepage .mura-body.mainColContent .mps-home-intro, #homepage .mura-body.mainColContent .mps-home-why-pg {
   max-width: 80%;
   margin: 0 auto; }
   #homepage .mura-body.mainColContent .mps-home-intro p, #homepage .mura-body.mainColContent .mps-home-why-pg p {
-    text-align: center; }
-  #homepage .mura-body.mainColContent .mps-home-intro #apply-btn, #homepage .mura-body.mainColContent .mps-home-why-pg #apply-btn {
     text-align: center; }
 
 #homepage .mura-body.mainColContent .mps-home-why-pg {
@@ -267,6 +261,10 @@ form .mura-group-label > ins, form .req label > ins {
     .news .mura-index div div.hasImage .date.releaseDate {
       margin-top: 0.6rem; } }
 
+@media only screen and (max-width: 992px) {
+  .newsArticle section.heroBanner.heroBanner-news {
+    background-size: cover !important; } }
+
 /* Fascination of Plants Day @ MSU */
 .fascination-of-plants-day-msu ol#crumblist, .fascination-of-plants-day-msu h1.mura-page-title.pageTitle {
   display: none; }
@@ -277,9 +275,6 @@ form .mura-group-label > ins, form .req label > ins {
   letter-spacing: 1.5px; }
 
 .fascination-of-plants-day-msu #MainContent label {
-  display: none; }
-
-.fascination-of-plants-day-msu #MainContent .a2a_kit.a2a_kit_size_32.a2a_default_style.social-share {
   display: none; }
 
 .fascination-of-plants-day-msu .mps-fopd-hero-text {
@@ -307,8 +302,6 @@ form .mura-group-label > ins, form .req label > ins {
   font-weight: 300;
   color: #18453B;
   margin-top: 0; }
-  .fascination-of-plants-day-msu .mps-fopd-content h3 a {
-    text-decoration: none; }
 
 .fascination-of-plants-day-msu .mps-fopd-content p.lead {
   margin: 0 auto;
