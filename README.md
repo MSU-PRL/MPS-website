@@ -15,8 +15,8 @@
 **Warning:** due to the way Mura's inline editor works, make sure to edit the .html files in an external code editor. Front-end editing might break certain features.
 ### .html file listing and links to web pages:
 * **mps-homepage-custom.html:** <a href="https://mps.natsci.msu.edu/">MPS homepage</a>
-* **mps-faculty-layout.html:** Markup template for faculty members under the <a href="https://mps.natsci.msu.edu/research-people/faculty/">Faculty</a> or  <a href="https://mps.natsci.msu.edu/research-people/executive-committee/">Executive Committee</a> pages. This template exists as a component in Mura called 'Faculty - Summary'.
-* **mps-student-layout.html:** Markup template for students members under the <a href="https://mps.natsci.msu.edu/research-people/students/">Students</a> page. This template exists as a component in Mura called 'Students - Summary'.
+* **mps-faculty-layout.html:** Template for faculty members under the <a href="https://mps.natsci.msu.edu/research-people/faculty/">Faculty</a> or  <a href="https://mps.natsci.msu.edu/research-people/executive-committee/">Executive Committee</a> pages. This template exists as a component in Mura called 'Faculty - Summary'.
+* **mps-student-layout.html:** Template for students under the <a href="https://mps.natsci.msu.edu/research-people/students/">Students</a> page. This template exists as a component in Mura called 'Students - Summary'.
 * **FoPD-2019.html:** <a href="https://mps.natsci.msu.edu/fopd/"> Fascination of Plants Day</a>
 
 ## JS Folder 
