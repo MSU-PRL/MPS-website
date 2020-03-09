@@ -1,33 +1,26 @@
 # Molecular Plant Sciences Website - Custom Code
-*This repository applies to the <a href="https://mps.natsci.msu.edu/">MPS website</a>, as hosted by the MSU College of Natural Sciences on Mura CMS. Although the MPS website has a pre-built design that is visually consistent with all websites within the College, it can contain custom content and styles between the header and footer areas. This repository has instructions for using the MPS custom code files. Each section below refers to its respective folder in the repository.*
-
-*Modifying MPS's code requires: 1) some knowledge of programming languages (HTML, CSS, jQuery, and Javascript), 2) knowledge of Mura's back-end and front-end interfaces, 3) a code editor, such as <a href="https://code.visualstudio.com/"> Visual Studio Code</a>, and 4) a compiler, such as <a href="http://koala-app.com/">Koala</a>.*
+*The MPS site is hosted by the MSU College of Natural Sciences on Mura CMS. Custom content and styles are allowed between the header and footer areas only. Modifying MPS's code requires: 1) some knowledge of HTML, CSS, and Javascript, 2) familiary with Mura CMS back-end and front-end, and 3) a code editor, such as <a href="https://code.visualstudio.com/"> Visual Studio Code</a>. Below are instructions on how to modify and publish the code.*
 <hr>
 
 ## CSS Folder
-The CSS folder contains all custom stylesheets for the MPS website.
-### Instructions to modify code:
- * **Custom modifications take place in the mps-2019.scss file, outside of Mura**. This is the core MPS custom CSS file. It contains variables that allow for control and consistency of custom visual components. It requires knowledge of SCSS programming language and a viable code editor, such as <a href="https://code.visualstudio.com/"> Visual Studio Code</a>.
-* **Use an automated compile and minimize system**, as Mura only reads .css files. Instructions:
-  1. **mps-2019.scss** file should be automatically compiled into the **mps-2019.css** file on each iteration. Live Sass Compiler, a Visual Studio Code extension, is recommended. Otherwise, <a href="http://koala-app.com/">Koala</a> is also a good compiler.
-  2. The **mps-2019.css** file should be automatically minimized into the **mps-2019.min.css** file. This can be done in code editors such as Visual Studio Code.
-  3. Copy and paste the minimized code from the *mps-2019.min.css** file into Mura's dedicated custom CSS file. The dedicated file is found in Mura's File Manager, under *pmsb_User_Assets/File/websiteTheme/mpsCustomCSS.css*. Right click **mpsCustomCSS.css**, choose 'Edit,' and paste the code. Save your changes.
-* **In Mura, do not change the name of the mpsCustomCSS.css file.** Any change will cause the server to not load the custom CSS.
-* **Identical copies of the CSS files in this repository are also found on the PRL server.** Ensure that all versions are up to date.
+### How to modify CSS:
+*This section applies **only** to the mps-2020.scss/.css/.min.css files*.
+* **Custom styles are written in the mps-2020.scss file**. This is the core styles file, written in SCSS, which allows for consistent design of components. 
+* **Compile and minimize the base mps-2020.scss file into mps-2020.min.css**.
+* **Copy and paste the code from the minimized file into Mura's dedicated custom CSS file, called  mpsCustomCSS.css**. This file is found in Mura's File Manager, under *https://prl.natsci.msu.edu/sites/_pmsb/assets/File/websiteTheme/mpsCustomCSS.css*. Right click on it, choose 'Edit', paste the code, and save your changes.
+* **Do not change the name of the mpsCustomCSS.css file in Mura**. Otherwise, CSS will not load.
+* **CSS files in this repository are also found on the MSU-DOE Plant Research Laboratory office server.** 
 
 ## HTML Folder
-The HTML folder contains content used on the MPS website. **Identical copies of these files are also found on the PRL server. Ensure that all versions at all locations are up to date.**
-### File listing:
-* **mps-homepage-custom.html:** This content is used on the <a href="https://mps.natsci.msu.edu/">MPS homepage</a> in the section right below the hero image.
-  * Any changes should be made in this file on a viable code editor, such as <a href="https://code.visualstudio.com/"> Visual Studio Code</a>, and not in Mura. The reason is that Mura's HTML editor is messy and difficult to work on.
-  * To update the content in Mura, paste the code from this file in the content section in the homepage.
-* **mps-faculty-layout.html:** Contains the markup to add new faculty to the <a href="https://mps.natsci.msu.edu/research-people/faculty/">Faculty</a> page. Copy and paste this code into Mura's HTML editor in the 'Content' section when creating a new faculty page in the back-end.
-* **FoPD-2019.html:** This content is used on the <a href="https://mps.natsci.msu.edu/fopd/"> Fascination of Plants Day</a> page.
+**Warning:** due to the way Mura's inline editor works, make sure to edit the .html files in an external code editor. Front-end editing might break certain features.
+### .html file listing and links to web pages:
+* **mps-homepage-custom.html:** <a href="https://mps.natsci.msu.edu/">MPS homepage</a>
+* **mps-faculty-layout.html:** Markup template for faculty members under the <a href="https://mps.natsci.msu.edu/research-people/faculty/">Faculty</a> or  <a href="https://mps.natsci.msu.edu/research-people/executive-committee/">Executive Committee</a> pages. This template exists as a component in Mura called 'Faculty - Summary'.
+* **mps-student-layout.html:** Markup template for students members under the <a href="https://mps.natsci.msu.edu/research-people/students/">Students</a> page. This template exists as a component in Mura called 'Students - Summary'.
+* **FoPD-2019.html:** <a href="https://mps.natsci.msu.edu/fopd/"> Fascination of Plants Day</a>
 
-## JS Folder
-The JS folder contains the custom PRL jQuery code. 
-### Instructions to modify code:
-* **Custom modifications take place in the mpsCustomJS.js file,  outside of Mura**. This is the core MPS custom JS file. It requires knowledge of JS and jQuery programming languages and a viable code editor, such as <a href="https://code.visualstudio.com/"> Visual Studio Code</a>.
-* **Copy and paste the contents from the MPSCustomJS.js file into Mura's dedicated custom JS file**. The dedicated file is found in Mura's back File Manager, under *pmsb_User_Assets/File/websiteTheme/MPSCustomJS.js*. Right click **MPSCustomJS.js**, choose 'Edit,' and paste the code. Save your changes.
-* **In Mura, do not change the name of the MPSCustomJS.js file**. Any change will cause the server to not load the custom JS.
-* **Identical copies of the JS files in this repository are also found on the PRL server.** Ensure that all versions are up to date.
+## JS Folder 
+### Instructions to modify JS:
+* **Custom JS is written in the mpsCustomJS.js file**. This file is found in this repository and the MSU-DOE Plant Research Laboratory office server.
+* **Copy and paste the code into Mura's dedicated custom JS file, also called mpsCustomJS.js**. This file is found in Mura's File Manager, under *https://prl.natsci.msu.edu/sites/_pmsb/assets/File/websiteTheme/mpsCustomJS.js*. Right click on it, choose 'Edit', paste the code, and save your changes.
+* **Do not change the name of the prlCustomJS.js file in Mura**. Otherwise, the JS will not load.
