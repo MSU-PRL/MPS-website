@@ -1,0 +1,9 @@
+<div>
+  <span aria-hidden="true" class="fa fa-home">&nbsp;</span>Department here<span class="sr-only">home icon</span><br />
+	<span aria-hidden="true" class="fa fa-envelope">&nbsp;</span> <a href="mailto:youngd34@msu.edu">email@msu.edu</a><span class="sr-only">envelope icon</span><br />
+  <strong>Lab</strong>: <a href="https://mps.natsci.msu.edu/research-people/faculty/yair-shachar-hill/">Example with link: Yair Shachar-Hill</a> OR Doing rotations
+</div>
+
+<div>
+  <strong>Research interests</strong>: Research summary goes here. End with a period.
+</div>

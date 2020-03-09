@@ -1,8 +1,4 @@
 MPS REDESIGN 2020
-
-Fixes post-Mura transition:
-- Redo README.md
-
 DONE:
   - Buttons
   - Homepage
@@ -24,3 +20,4 @@ DONE:
   - Redesign Homepage
   - Original news stories (some Bootstrap components in there)
   - Delete unused CSS
+  - Redo README.md
